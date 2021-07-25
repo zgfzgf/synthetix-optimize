@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../ContractStorage.sol";
+import "../base/ContractStorage.sol";
 
 contract MockContractStorage is ContractStorage {
     struct SomeEntry {

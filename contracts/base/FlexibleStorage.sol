@@ -2,10 +2,10 @@ pragma solidity ^0.5.16;
 
 // Inheritance
 import "./ContractStorage.sol";
-import "./interfaces/IFlexibleStorage.sol";
+import "./../interfaces/IFlexibleStorage.sol";
 
 // Internal References
-import "./interfaces/IAddressResolver.sol";
+import "./../interfaces/IAddressResolver.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/flexiblestorage
 contract FlexibleStorage is ContractStorage, IFlexibleStorage {

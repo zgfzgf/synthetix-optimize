@@ -1,8 +1,8 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./interfaces/ISystemStatus.sol";
+import "./../access/Owned.sol";
+import "./../interfaces/ISystemStatus.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/systemstatus
 contract SystemStatus is Owned, ISystemStatus {
