@@ -1,32 +1,33 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./access/LimitedSetup.sol";
-import "./proxy/Proxyable.sol";
-import "./resolver/MixinResolver.sol";
-import "./resolver/MixinSystemSettings.sol";
-import "./interfaces/IFeePool.sol";
+import "./../access/Owned.sol";
+import "./../access/LimitedSetup.sol";
+import "./../proxy/Proxyable.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../resolver/MixinSystemSettings.sol";
+import "./../interfaces/IFeePool.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/IERC20.sol";
-import "./interfaces/ISynth.sol";
-import "./interfaces/ISystemStatus.sol";
-import "./interfaces/ISynthetix.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/ISynth.sol";
+import "./../interfaces/ISystemStatus.sol";
+import "./../interfaces/ISynthetix.sol";
+import "./../interfaces/IExchanger.sol";
+import "./../interfaces/IIssuer.sol";
+import "./../interfaces/ISynthetixState.sol";
+import "./../interfaces/IRewardEscrowV2.sol";
+import "./../interfaces/IDelegateApprovals.sol";
+import "./../interfaces/IRewardsDistribution.sol";
+import "./../interfaces/IEtherCollateralsUSD.sol";
+import "./../interfaces/ICollateralManager.sol";
+import "./../interfaces/IEtherWrapper.sol";
+
 import "./FeePoolState.sol";
 import "./FeePoolEternalStorage.sol";
-import "./interfaces/IExchanger.sol";
-import "./interfaces/IIssuer.sol";
-import "./interfaces/ISynthetixState.sol";
-import "./interfaces/IRewardEscrowV2.sol";
-import "./interfaces/IDelegateApprovals.sol";
-import "./interfaces/IRewardsDistribution.sol";
-import "./interfaces/IEtherCollateralsUSD.sol";
-import "./interfaces/ICollateralManager.sol";
-import "./interfaces/IEtherWrapper.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/feepool
 contract FeePool is Owned, Proxyable, LimitedSetup, MixinSystemSettings, IFeePool {
