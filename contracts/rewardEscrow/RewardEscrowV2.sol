@@ -5,8 +5,8 @@ pragma experimental ABIEncoderV2;
 import "./BaseRewardEscrowV2.sol";
 
 // Internal references
-import "./interfaces/IRewardEscrow.sol";
-import "./interfaces/ISystemStatus.sol";
+import "./../interfaces/IRewardEscrow.sol";
+import "./../interfaces/ISystemStatus.sol";
 
 // https://docs.synthetix.io/contracts/RewardEscrow
 contract RewardEscrowV2 is BaseRewardEscrowV2 {

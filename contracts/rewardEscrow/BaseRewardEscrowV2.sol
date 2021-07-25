@@ -2,19 +2,19 @@ pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./access/LimitedSetup.sol";
-import "./resolver/MixinResolver.sol";
-import "./interfaces/IRewardEscrowV2.sol";
+import "./../access/Owned.sol";
+import "./../access/LimitedSetup.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../interfaces/IRewardEscrowV2.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/IERC20.sol";
-import "./interfaces/IFeePool.sol";
-import "./interfaces/ISynthetix.sol";
-import "./interfaces/IIssuer.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/IFeePool.sol";
+import "./../interfaces/ISynthetix.sol";
+import "./../interfaces/IIssuer.sol";
 
 // https://docs.synthetix.io/contracts/RewardEscrow
 contract BaseRewardEscrowV2 is Owned, IRewardEscrowV2, LimitedSetup(8 weeks), MixinResolver {
