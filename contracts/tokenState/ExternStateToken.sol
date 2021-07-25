@@ -1,11 +1,11 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./proxy/Proxyable.sol";
+import "./../access/Owned.sol";
+import "./../proxy/Proxyable.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
 import "./TokenState.sol";

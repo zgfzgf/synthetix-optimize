@@ -2,7 +2,7 @@ pragma solidity ^0.5.16;
 
 // Inheritance
 import "./access/Owned.sol";
-import "./ExternStateToken.sol";
+import "./tokenState/ExternStateToken.sol";
 import "./resolver/MixinResolver.sol";
 import "./interfaces/ISynth.sol";
 import "./interfaces/IERC20.sol";

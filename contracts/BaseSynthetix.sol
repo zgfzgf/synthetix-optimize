@@ -2,13 +2,13 @@ pragma solidity ^0.5.16;
 
 // Inheritance
 import "./interfaces/IERC20.sol";
-import "./ExternStateToken.sol";
+import "./tokenState/TokenState.sol";
+import "./tokenState/ExternStateToken.sol";
 import "./resolver/MixinResolver.sol";
 import "./interfaces/ISynthetix.sol";
 
 // Internal references
 import "./interfaces/ISynth.sol";
-import "./TokenState.sol";
 import "./interfaces/ISynthetixState.sol";
 import "./interfaces/ISystemStatus.sol";
 import "./interfaces/IExchanger.sol";
