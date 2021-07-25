@@ -1,28 +1,28 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./resolver/MixinResolver.sol";
-import "./resolver/MixinSystemSettings.sol";
-import "./interfaces/IIssuer.sol";
+import "./../access/Owned.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../resolver/MixinSystemSettings.sol";
+import "./../interfaces/IIssuer.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/ISynth.sol";
-import "./interfaces/ISynthetix.sol";
-import "./interfaces/IFeePool.sol";
-import "./interfaces/ISynthetixState.sol";
-import "./interfaces/IExchanger.sol";
-import "./interfaces/IDelegateApprovals.sol";
-import "./interfaces/IExchangeRates.sol";
-import "./interfaces/IEtherCollateral.sol";
-import "./interfaces/IEtherCollateralsUSD.sol";
-import "./interfaces/IHasBalance.sol";
-import "./interfaces/IERC20.sol";
-import "./interfaces/ILiquidations.sol";
-import "./interfaces/ICollateralManager.sol";
+import "./../interfaces/ISynth.sol";
+import "./../interfaces/ISynthetix.sol";
+import "./../interfaces/IFeePool.sol";
+import "./../interfaces/ISynthetixState.sol";
+import "./../interfaces/IExchanger.sol";
+import "./../interfaces/IDelegateApprovals.sol";
+import "./../interfaces/IExchangeRates.sol";
+import "./../interfaces/IEtherCollateral.sol";
+import "./../interfaces/IEtherCollateralsUSD.sol";
+import "./../interfaces/IHasBalance.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/ILiquidations.sol";
+import "./../interfaces/ICollateralManager.sol";
 
 interface IRewardEscrowV2 {
     // Views

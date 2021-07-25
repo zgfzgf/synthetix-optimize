@@ -1,24 +1,24 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./resolver/MixinResolver.sol";
-import "./resolver/MixinSystemSettings.sol";
-import "./interfaces/IDebtCache.sol";
+import "./../access/Owned.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../resolver/MixinSystemSettings.sol";
+import "./../interfaces/IDebtCache.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/IIssuer.sol";
-import "./interfaces/IExchanger.sol";
-import "./interfaces/IExchangeRates.sol";
-import "./interfaces/ISystemStatus.sol";
-import "./interfaces/IEtherCollateral.sol";
-import "./interfaces/IEtherCollateralsUSD.sol";
-import "./interfaces/IERC20.sol";
-import "./interfaces/ICollateralManager.sol";
-import "./interfaces/IEtherWrapper.sol";
+import "./../interfaces/IIssuer.sol";
+import "./../interfaces/IExchanger.sol";
+import "./../interfaces/IExchangeRates.sol";
+import "./../interfaces/ISystemStatus.sol";
+import "./../interfaces/IEtherCollateral.sol";
+import "./../interfaces/IEtherCollateralsUSD.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/ICollateralManager.sol";
+import "./../interfaces/IEtherWrapper.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/debtcache
 contract BaseDebtCache is Owned, MixinSystemSettings, IDebtCache {

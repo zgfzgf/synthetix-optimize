@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./../EternalStorage.sol";
+import "./../base/EternalStorage.sol";
 import "./../access/LimitedSetup.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/feepooleternalstorage

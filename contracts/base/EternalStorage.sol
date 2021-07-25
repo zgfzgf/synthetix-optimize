@@ -1,8 +1,8 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./access/State.sol";
+import "./../access/Owned.sol";
+import "./../access/State.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/eternalstorage
 /**

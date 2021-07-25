@@ -1,8 +1,8 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./interfaces/IDelegateApprovals.sol";
+import "./../access/Owned.sol";
+import "./../interfaces/IDelegateApprovals.sol";
 
 // Internal references
 import "./EternalStorage.sol";

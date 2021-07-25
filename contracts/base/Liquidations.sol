@@ -1,20 +1,20 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./resolver/MixinResolver.sol";
-import "./resolver/MixinSystemSettings.sol";
-import "./interfaces/ILiquidations.sol";
+import "./../access/Owned.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../resolver/MixinSystemSettings.sol";
+import "./../interfaces/ILiquidations.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
 import "./EternalStorage.sol";
-import "./interfaces/ISynthetix.sol";
-import "./interfaces/IExchangeRates.sol";
-import "./interfaces/IIssuer.sol";
-import "./interfaces/ISystemStatus.sol";
+import "./../interfaces/ISynthetix.sol";
+import "./../interfaces/IExchangeRates.sol";
+import "./../interfaces/IIssuer.sol";
+import "./../interfaces/ISystemStatus.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/liquidations
 contract Liquidations is Owned, MixinSystemSettings, ILiquidations {
