@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../TradingRewards.sol";
+import "../rewards/TradingRewards.sol";
 
 import "openzeppelin-solidity-2.3.0/contracts/token/ERC20/ERC20Detailed.sol";
 

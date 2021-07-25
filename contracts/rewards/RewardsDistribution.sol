@@ -1,16 +1,16 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./interfaces/IRewardsDistribution.sol";
+import "./../access/Owned.sol";
+import "./../interfaces/IRewardsDistribution.sol";
 
 // Libraires
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/IERC20.sol";
-import "./interfaces/IFeePool.sol";
-import "./interfaces/IRewardsDistribution.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/IFeePool.sol";
+import "./../interfaces/IRewardsDistribution.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/rewardsdistribution
 contract RewardsDistribution is Owned, IRewardsDistribution {

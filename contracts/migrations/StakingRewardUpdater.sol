@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../StakingRewards.sol";
+import "../rewards/StakingRewards.sol";
 
 contract StakingRewardUpdater {
     address public deployer;

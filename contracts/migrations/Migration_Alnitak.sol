@@ -7,8 +7,8 @@ import "../proxy/Proxy.sol";
 import "../exchange/ExchangeState.sol";
 import "../base/SystemStatus.sol";
 import "../legacy/LegacyTokenState.sol";
-import "../RewardEscrow.sol";
-import "../RewardsDistribution.sol";
+import "../rewardEscrow/RewardEscrow.sol";
+import "../rewards/RewardsDistribution.sol";
 
 interface ISynthetixNamedContract {
     // solhint-disable func-name-mixedcase

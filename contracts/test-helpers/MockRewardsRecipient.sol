@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../RewardsDistributionRecipient.sol";
+import "../rewards/RewardsDistributionRecipient.sol";
 import "../access/Owned.sol";
 
 contract MockRewardsRecipient is RewardsDistributionRecipient {

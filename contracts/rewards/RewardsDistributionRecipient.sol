@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
+import "./../access/Owned.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/rewardsdistributionrecipient
 contract RewardsDistributionRecipient is Owned {
