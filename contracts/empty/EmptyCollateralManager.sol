@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "./interfaces/ICollateralManager.sol";
+import "./../interfaces/ICollateralManager.sol";
 
 contract EmptyCollateralManager is ICollateralManager {
     // Manager information
