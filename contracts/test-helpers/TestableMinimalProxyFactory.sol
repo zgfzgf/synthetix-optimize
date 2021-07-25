@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../MinimalProxyFactory.sol";
+import "../base/MinimalProxyFactory.sol";
 
 contract TestableMinimalProxyFactory is MinimalProxyFactory {
     function cloneAsMinimalProxy(address _base, string calldata _revertMsg) external returns (address clone) {
