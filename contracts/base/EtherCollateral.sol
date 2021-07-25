@@ -1,22 +1,22 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./access/Pausable.sol";
+import "./../access/Owned.sol";
+import "./../access/Pausable.sol";
 import "openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol";
-import "./resolver/MixinResolver.sol";
-import "./interfaces/IEtherCollateral.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../interfaces/IEtherCollateral.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/ISystemStatus.sol";
-import "./interfaces/IFeePool.sol";
-import "./interfaces/ISynth.sol";
-import "./interfaces/IERC20.sol";
-import "./interfaces/IDepot.sol";
-import "./interfaces/IExchangeRates.sol";
+import "./../interfaces/ISystemStatus.sol";
+import "./../interfaces/IFeePool.sol";
+import "./../interfaces/ISynth.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/IDepot.sol";
+import "./../interfaces/IExchangeRates.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/ethercollateral
 contract EtherCollateral is Owned, Pausable, ReentrancyGuard, MixinResolver, IEtherCollateral {

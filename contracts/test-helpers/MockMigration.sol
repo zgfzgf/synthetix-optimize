@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../BaseMigration.sol";
+import "../base/BaseMigration.sol";
 import "../access/Owned.sol";
 
 contract MockMigration is BaseMigration {
