@@ -1,9 +1,9 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./access/State.sol";
-import "./interfaces/IExchangeState.sol";
+import "./../access/Owned.sol";
+import "./../access/State.sol";
+import "./../interfaces/IExchangeState.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/exchangestate
 contract ExchangeState is Owned, State, IExchangeState {

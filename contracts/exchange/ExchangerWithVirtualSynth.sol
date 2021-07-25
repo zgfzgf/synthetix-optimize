@@ -4,9 +4,9 @@ pragma solidity ^0.5.16;
 import "./Exchanger.sol";
 
 // Internal references
-import "./interfaces/IVirtualSynth.sol";
-import "./MinimalProxyFactory.sol";
-import "./VirtualSynth.sol";
+import "./../interfaces/IVirtualSynth.sol";
+import "./../MinimalProxyFactory.sol";
+import "./../VirtualSynth.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/exchangerwithvirtualsynth
 contract ExchangerWithVirtualSynth is MinimalProxyFactory, Exchanger {
