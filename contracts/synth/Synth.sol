@@ -1,17 +1,17 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./access/Owned.sol";
-import "./tokenState/ExternStateToken.sol";
-import "./resolver/MixinResolver.sol";
-import "./interfaces/ISynth.sol";
-import "./interfaces/IERC20.sol";
+import "./../access/Owned.sol";
+import "./../tokenState/ExternStateToken.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../interfaces/ISynth.sol";
+import "./../interfaces/IERC20.sol";
 
 // Internal references
-import "./interfaces/ISystemStatus.sol";
-import "./interfaces/IFeePool.sol";
-import "./interfaces/IExchanger.sol";
-import "./interfaces/IIssuer.sol";
+import "./../interfaces/ISystemStatus.sol";
+import "./../interfaces/IFeePool.sol";
+import "./../interfaces/IExchanger.sol";
+import "./../interfaces/IIssuer.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/synth
 contract Synth is Owned, IERC20, ExternStateToken, MixinResolver, ISynth {

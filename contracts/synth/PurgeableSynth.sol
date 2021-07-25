@@ -4,10 +4,10 @@ pragma solidity ^0.5.16;
 import "./Synth.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal References
-import "./interfaces/IExchangeRates.sol";
+import "./../interfaces/IExchangeRates.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/purgeablesynth
 contract PurgeableSynth is Synth {

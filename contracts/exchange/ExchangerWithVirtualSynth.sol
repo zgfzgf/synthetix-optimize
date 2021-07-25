@@ -6,7 +6,7 @@ import "./Exchanger.sol";
 // Internal references
 import "./../interfaces/IVirtualSynth.sol";
 import "./../base/MinimalProxyFactory.sol";
-import "./../VirtualSynth.sol";
+import "./../synth/VirtualSynth.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/exchangerwithvirtualsynth
 contract ExchangerWithVirtualSynth is MinimalProxyFactory, Exchanger {

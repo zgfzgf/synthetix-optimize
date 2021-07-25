@@ -4,13 +4,13 @@ pragma solidity ^0.5.16;
 import "openzeppelin-solidity-2.3.0/contracts/token/ERC20/ERC20.sol";
 
 // Libraries
-import "./library/SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
-import "./interfaces/ISynth.sol";
-import "./interfaces/IAddressResolver.sol";
-import "./interfaces/IVirtualSynth.sol";
-import "./interfaces/IExchanger.sol";
+import "./../interfaces/ISynth.sol";
+import "./../interfaces/IAddressResolver.sol";
+import "./../interfaces/IVirtualSynth.sol";
+import "./../interfaces/IExchanger.sol";
 // Note: use OZ's IERC20 here as using ours will complain about conflicting names
 // during the build
 import "openzeppelin-solidity-2.3.0/contracts/token/ERC20/IERC20.sol";
