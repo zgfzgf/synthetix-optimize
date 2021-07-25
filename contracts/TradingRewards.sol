@@ -1,9 +1,9 @@
 pragma solidity ^0.5.16;
 
 // Internal dependencies.
-import "./Pausable.sol";
-import "./MixinResolver.sol";
-import "./Owned.sol";
+import "./access/Owned.sol";
+import "./access/Pausable.sol";
+import "./resolver/MixinResolver.sol";
 
 // External dependencies.
 import "openzeppelin-solidity-2.3.0/contracts/token/ERC20/ERC20Detailed.sol";
@@ -11,7 +11,7 @@ import "openzeppelin-solidity-2.3.0/contracts/token/ERC20/SafeERC20.sol";
 import "openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol";
 
 // Libraries.
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references.
 import "./interfaces/ITradingRewards.sol";

@@ -1,8 +1,8 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
+import "./../access/Owned.sol";
+import "./../resolver/MixinResolver.sol";
 
 // Internal references
 import "./BinaryOptionMarket.sol";

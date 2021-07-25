@@ -3,7 +3,7 @@
  */
 pragma solidity ^0.5.16;
 
-import "../Owned.sol";
+import "../access/Owned.sol";
 import "../interfaces/ISynthetix.sol";
 import "../interfaces/IFeePool.sol";
 import "../interfaces/IERC20.sol";

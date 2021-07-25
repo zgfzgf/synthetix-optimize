@@ -5,7 +5,7 @@ pragma experimental ABIEncoderV2;
 // Inheritance
 import "./Collateral.sol";
 import "openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol";
-import "./interfaces/ICollateralEth.sol";
+import "./../interfaces/ICollateralEth.sol";
 
 // Internal references
 import "./CollateralState.sol";

@@ -1,13 +1,13 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
-import "./MixinSystemSettings.sol";
+import "./access/Owned.sol";
+import "./resolver/MixinResolver.sol";
+import "./resolver/MixinSystemSettings.sol";
 import "./interfaces/ISystemSettings.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/systemsettings
 contract SystemSettings is Owned, MixinSystemSettings, ISystemSettings {

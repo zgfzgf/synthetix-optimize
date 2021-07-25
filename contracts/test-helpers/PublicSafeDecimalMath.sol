@@ -3,7 +3,7 @@
  */
 pragma solidity ^0.5.16;
 
-import "../SafeDecimalMath.sol";
+import "../library/SafeDecimalMath.sol";
 
 contract PublicSafeDecimalMath {
     using SafeDecimalMath for uint;

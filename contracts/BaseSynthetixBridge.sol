@@ -2,9 +2,9 @@ pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
-import "./MixinSystemSettings.sol";
+import "./access/Owned.sol";
+import "./resolver/MixinResolver.sol";
+import "./resolver/MixinSystemSettings.sol";
 import "./interfaces/IBaseSynthetixBridge.sol";
 
 // Internal references

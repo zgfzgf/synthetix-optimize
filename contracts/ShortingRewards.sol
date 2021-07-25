@@ -9,11 +9,11 @@ import "openzeppelin-solidity-2.3.0/contracts/token/ERC20/SafeERC20.sol";
 import "openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol";
 
 // Inheritance
-import "./interfaces/IShortingRewards.sol";
+import "./access/Pausable.sol";
 import "./RewardsDistributionRecipient.sol";
-import "./Pausable.sol";
-import "./MixinResolver.sol";
+import "./resolver/MixinResolver.sol";
 
+import "./interfaces/IShortingRewards.sol";
 import "./interfaces/ICollateralErc20.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/stakingrewards

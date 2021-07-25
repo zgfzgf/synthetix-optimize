@@ -3,12 +3,12 @@ pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 // Inheritance
-import "./Owned.sol";
-import "./State.sol";
-import "./interfaces/ICollateralLoan.sol";
+import "./../access/Owned.sol";
+import "./../access/State.sol";
+import "./../interfaces/ICollateralLoan.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 contract CollateralState is Owned, State, ICollateralLoan {
     using SafeMath for uint;

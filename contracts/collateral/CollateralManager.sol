@@ -1,22 +1,22 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./Pausable.sol";
-import "./MixinResolver.sol";
-import "./interfaces/ICollateralManager.sol";
+import "./../access/Owned.sol";
+import "./../access/Pausable.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../interfaces/ICollateralManager.sol";
 
 // Libraries
-import "./AddressSetLib.sol";
-import "./Bytes32SetLib.sol";
-import "./SafeDecimalMath.sol";
+import "./../library/AddressSetLib.sol";
+import "./../library/Bytes32SetLib.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
 import "./CollateralManagerState.sol";
-import "./interfaces/IIssuer.sol";
-import "./interfaces/IExchangeRates.sol";
-import "./interfaces/IERC20.sol";
-import "./interfaces/ISynth.sol";
+import "./../interfaces/IIssuer.sol";
+import "./../interfaces/IExchangeRates.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/ISynth.sol";
 
 contract CollateralManager is ICollateralManager, Owned, Pausable, MixinResolver {
     /* ========== LIBRARIES ========== */

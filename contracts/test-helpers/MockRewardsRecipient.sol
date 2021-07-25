@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
 import "../RewardsDistributionRecipient.sol";
-import "../Owned.sol";
+import "../access/Owned.sol";
 
 contract MockRewardsRecipient is RewardsDistributionRecipient {
     uint256 public rewardsAvailable;

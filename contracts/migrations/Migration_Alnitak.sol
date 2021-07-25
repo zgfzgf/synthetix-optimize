@@ -1,9 +1,9 @@
 pragma solidity ^0.5.16;
 
 import "../BaseMigration.sol";
-import "../AddressResolver.sol";
-import "../ProxyERC20.sol";
-import "../Proxy.sol";
+import "../resolver/AddressResolver.sol";
+import "../proxy/ProxyERC20.sol";
+import "../proxy/Proxy.sol";
 import "../ExchangeState.sol";
 import "../SystemStatus.sol";
 import "../legacy/LegacyTokenState.sol";

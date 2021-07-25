@@ -3,7 +3,7 @@ pragma solidity ^0.5.16;
 import "./MixinResolver.sol";
 
 // Internal references
-import "./interfaces/IFlexibleStorage.sol";
+import "./../interfaces/IFlexibleStorage.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/mixinsystemsettings
 contract MixinSystemSettings is MixinResolver {

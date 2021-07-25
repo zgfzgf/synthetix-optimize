@@ -1,15 +1,15 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./Proxyable.sol";
-import "./LimitedSetup.sol";
-import "./MixinResolver.sol";
-import "./MixinSystemSettings.sol";
+import "./access/Owned.sol";
+import "./access/LimitedSetup.sol";
+import "./proxy/Proxyable.sol";
+import "./resolver/MixinResolver.sol";
+import "./resolver/MixinSystemSettings.sol";
 import "./interfaces/IFeePool.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references
 import "./interfaces/IERC20.sol";

@@ -1,13 +1,13 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
-import "./MixinSystemSettings.sol";
+import "./access/Owned.sol";
+import "./resolver/MixinResolver.sol";
+import "./resolver/MixinSystemSettings.sol";
 import "./interfaces/IIssuer.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references
 import "./interfaces/ISynth.sol";

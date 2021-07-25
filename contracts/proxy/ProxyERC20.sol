@@ -2,7 +2,7 @@ pragma solidity ^0.5.16;
 
 // Inheritance
 import "./Proxy.sol";
-import "./interfaces/IERC20.sol";
+import "./../interfaces/IERC20.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/proxyerc20
 contract ProxyERC20 is Proxy, IERC20 {

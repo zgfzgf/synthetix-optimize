@@ -3,23 +3,23 @@ pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinSystemSettings.sol";
-import "./interfaces/ICollateralLoan.sol";
+import "./../access/Owned.sol";
+import "./../resolver/MixinSystemSettings.sol";
+import "./../interfaces/ICollateralLoan.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
 import "./CollateralState.sol";
-import "./interfaces/ICollateralManager.sol";
-import "./interfaces/ISystemStatus.sol";
-import "./interfaces/IFeePool.sol";
-import "./interfaces/ISynth.sol";
-import "./interfaces/IERC20.sol";
-import "./interfaces/IExchangeRates.sol";
-import "./interfaces/IExchanger.sol";
-import "./interfaces/IShortingRewards.sol";
+import "./../interfaces/ICollateralManager.sol";
+import "./../interfaces/ISystemStatus.sol";
+import "./../interfaces/IFeePool.sol";
+import "./../interfaces/ISynth.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/IExchangeRates.sol";
+import "./../interfaces/IExchanger.sol";
+import "./../interfaces/IShortingRewards.sol";
 
 contract Collateral is ICollateralLoan, Owned, MixinSystemSettings {
     /* ========== LIBRARIES ========== */

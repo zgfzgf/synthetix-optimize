@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
 import "../BaseMigration.sol";
-import "../Owned.sol";
+import "../access/Owned.sol";
 
 contract MockMigration is BaseMigration {
     constructor(address _owner) public BaseMigration(_owner) {}

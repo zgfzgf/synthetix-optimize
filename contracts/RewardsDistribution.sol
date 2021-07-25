@@ -1,11 +1,11 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
+import "./access/Owned.sol";
 import "./interfaces/IRewardsDistribution.sol";
 
 // Libraires
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references
 import "./interfaces/IERC20.sol";

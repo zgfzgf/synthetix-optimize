@@ -4,11 +4,11 @@ pragma experimental ABIEncoderV2;
 
 // Inheritance
 import "./Collateral.sol";
-import "./interfaces/ICollateralErc20.sol";
+import "./../interfaces/ICollateralErc20.sol";
 
 // Internal references
 import "./CollateralState.sol";
-import "./interfaces/IERC20.sol";
+import "./../interfaces/IERC20.sol";
 
 // This contract handles the specific ERC20 implementation details of managing a loan.
 contract CollateralErc20 is ICollateralErc20, Collateral {

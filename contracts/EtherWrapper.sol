@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
+import "./access/Owned.sol";
 import "./interfaces/IAddressResolver.sol";
 import "./interfaces/IEtherWrapper.sol";
 import "./interfaces/ISynth.sol";
@@ -9,16 +9,16 @@ import "./interfaces/IERC20.sol";
 import "./interfaces/IWETH.sol";
 
 // Internal references
-import "./Pausable.sol";
+import "./access/Pausable.sol";
 import "./interfaces/IIssuer.sol";
 import "./interfaces/IExchangeRates.sol";
 import "./interfaces/IFeePool.sol";
-import "./MixinResolver.sol";
-import "./MixinSystemSettings.sol";
+import "./resolver/MixinResolver.sol";
+import "./resolver/MixinSystemSettings.sol";
 
 // Libraries
 import "openzeppelin-solidity-2.3.0/contracts/math/SafeMath.sol";
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/etherwrapper
 contract EtherWrapper is Owned, Pausable, MixinResolver, MixinSystemSettings, IEtherWrapper {

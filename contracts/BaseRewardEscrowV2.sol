@@ -2,13 +2,13 @@ pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
-import "./LimitedSetup.sol";
+import "./access/Owned.sol";
+import "./access/LimitedSetup.sol";
+import "./resolver/MixinResolver.sol";
 import "./interfaces/IRewardEscrowV2.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references
 import "./interfaces/IERC20.sol";

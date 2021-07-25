@@ -1,11 +1,11 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./interfaces/IERC20.sol";
-import "./interfaces/IBinaryOption.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/IBinaryOption.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
 import "./BinaryOptionMarket.sol";

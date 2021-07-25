@@ -1,14 +1,14 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./Pausable.sol";
+import "./access/Owned.sol";
+import "./access/Pausable.sol";
 import "openzeppelin-solidity-2.3.0/contracts/utils/ReentrancyGuard.sol";
-import "./MixinResolver.sol";
+import "./resolver/MixinResolver.sol";
 import "./interfaces/IEtherCollateralsUSD.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references
 import "./interfaces/ISystemStatus.sol";

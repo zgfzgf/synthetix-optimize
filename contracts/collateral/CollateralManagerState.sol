@@ -3,11 +3,11 @@ pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
 // Inheritance
-import "./Owned.sol";
-import "./State.sol";
+import "./../access/Owned.sol";
+import "./../access/State.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 contract CollateralManagerState is Owned, State {
     using SafeMath for uint;

@@ -1,13 +1,13 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
-import "./MixinSystemSettings.sol";
+import "./access/Owned.sol";
+import "./resolver/MixinResolver.sol";
+import "./resolver/MixinSystemSettings.sol";
 import "./interfaces/IExchanger.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./library/SafeDecimalMath.sol";
 
 // Internal references
 import "./interfaces/ISystemStatus.sol";
@@ -19,7 +19,8 @@ import "./interfaces/IDelegateApprovals.sol";
 import "./interfaces/IIssuer.sol";
 import "./interfaces/ITradingRewards.sol";
 import "./interfaces/IVirtualSynth.sol";
-import "./Proxyable.sol";
+
+import "./proxy/Proxyable.sol";
 
 // Note: use OZ's IERC20 here as using ours will complain about conflicting names
 // during the build (VirtualSynth has IERC20 from the OZ ERC20 implementation)

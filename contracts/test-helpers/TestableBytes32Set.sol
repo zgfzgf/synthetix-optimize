@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../Bytes32SetLib.sol";
+import "../library/Bytes32SetLib.sol";
 
 contract TestableBytes32Set {
     using Bytes32SetLib for Bytes32SetLib.Bytes32Set;

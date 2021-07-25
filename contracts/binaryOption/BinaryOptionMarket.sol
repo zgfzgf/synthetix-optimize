@@ -1,19 +1,19 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
-import "./MixinResolver.sol";
-import "./interfaces/IBinaryOptionMarket.sol";
+import "./../access/Owned.sol";
+import "./../resolver/MixinResolver.sol";
+import "./../interfaces/IBinaryOptionMarket.sol";
 
 // Libraries
-import "./SafeDecimalMath.sol";
+import "./../library/SafeDecimalMath.sol";
 
 // Internal references
 import "./BinaryOptionMarketManager.sol";
 import "./BinaryOption.sol";
-import "./interfaces/IExchangeRates.sol";
-import "./interfaces/IERC20.sol";
-import "./interfaces/IFeePool.sol";
+import "./../interfaces/IExchangeRates.sol";
+import "./../interfaces/IERC20.sol";
+import "./../interfaces/IFeePool.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/binaryoptionmarket
 contract BinaryOptionMarket is Owned, MixinResolver, IBinaryOptionMarket {

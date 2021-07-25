@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
-import "../BinaryOptionMarket.sol";
-import "../AddressResolver.sol";
+import "../binaryOption/BinaryOptionMarket.sol";
+import "../resolver/AddressResolver.sol";
 
 contract MockBinaryOptionMarketManager {
     BinaryOptionMarket public market;

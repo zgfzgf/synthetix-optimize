@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./LimitedSetup.sol";
+import "./access/LimitedSetup.sol";
 import "./SynthetixState.sol";
 
 // Internal References

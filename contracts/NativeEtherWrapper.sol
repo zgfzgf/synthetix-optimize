@@ -2,7 +2,7 @@
 pragma solidity ^0.5.16;
 
 // Inheritance
-import "./Owned.sol";
+import "./access/Owned.sol";
 import "./interfaces/IAddressResolver.sol";
 import "./interfaces/IEtherWrapper.sol";
 import "./interfaces/ISynth.sol";
@@ -10,7 +10,7 @@ import "./interfaces/IWETH.sol";
 import "./interfaces/IERC20.sol";
 
 // Internal references
-import "./MixinResolver.sol";
+import "./resolver/MixinResolver.sol";
 import "./interfaces/IEtherWrapper.sol";
 
 // https://docs.synthetix.io/contracts/source/contracts/nativeetherwrapper

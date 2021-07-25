@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "../BinaryOptionMarket.sol";
+import "../binaryOption/BinaryOptionMarket.sol";
 
 contract TestableBinaryOptionMarket is BinaryOptionMarket {
     constructor(
